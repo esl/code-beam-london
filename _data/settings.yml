@@ -1,8 +1,8 @@
 homepage_settings:
   countdown:
     show: false
-    timezone: America/New_York
-    deadline: 2024-10-14 12:00
+    timezone: Europe/London
+    deadline: 2025-01-31 12:00
   modal:
     show: false
     delay: 5000
@@ -11,4 +11,4 @@ homepage_settings:
     title: "Testimonials"
   gallery:
     show: false
-    title: "Code BEAM Lite NYC 2024"
+    title: "Code BEAM Lite London 2025"
