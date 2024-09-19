@@ -38,11 +38,11 @@
 #  link: "shop"
 #- name: Blog
 #  link: "blog"
-- name: Programme Committee
-  link: "members"
-- name: Venue
-  link: "venue"
-- name: Sponsors
-  link: "sponsors"
+#- name: Programme Committee
+#  link: "members"
+#- name: Venue
+#  link: "venue"
+#- name: Sponsors
+#  link: "sponsors"
 - name: Contact
   link: "contact"
