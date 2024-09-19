@@ -1,0 +1,3914 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <title>Code BEAM Lite Stockholm</title>
+  <meta content="width=device-width" name="viewport" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="Code BEAM Lite Stockholm is the premiere Erlang and Elixir conference in the Nordics - one day of first-rate BEAM-related talks.
+" />
+  <link
+    rel="canonical"
+    href="https://codebeamstockholm.com/"
+  />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TBJ2M5G');</script>
+  <!-- End Google Tag Manager -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data.min.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Code BEAM Lite Stockholm 2024 | Code BEAM Lite Stockholm</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Code BEAM Lite Stockholm 2024" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Code BEAM Lite Stockholm is the premiere Erlang and Elixir conference in the Nordics - one day of first-rate BEAM-related talks." />
+<meta property="og:description" content="Code BEAM Lite Stockholm is the premiere Erlang and Elixir conference in the Nordics - one day of first-rate BEAM-related talks." />
+<link rel="canonical" href="https://codebeamstockholm.com/" />
+<meta property="og:url" content="https://codebeamstockholm.com/" />
+<meta property="og:site_name" content="Code BEAM Lite Stockholm" />
+<meta property="og:image" content="https://codebeamstockholm.com/assets/images/CB_STO_2024_1920x1080-4.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://codebeamstockholm.com/assets/images/CB_STO_2024_1920x1080-4.jpg" />
+<meta property="twitter:title" content="Code BEAM Lite Stockholm 2024" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Code BEAM Lite Stockholm is the premiere Erlang and Elixir conference in the Nordics - one day of first-rate BEAM-related talks.","headline":"Code BEAM Lite Stockholm 2024","image":"https://codebeamstockholm.com/assets/images/CB_STO_2024_1920x1080-4.jpg","name":"Code BEAM Lite Stockholm","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://codebeamstockholm.com/assets/images/logo2022.png"}},"url":"https://codebeamstockholm.com/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!--Remove image dragging -->
+  <body ondragstart="return false;" ondrop="return false;">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/assets/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/brands.min.css">
+      <link rel="stylesheet" href="/assets/font-awesome/css/solid.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400i,700i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- WEBSITE ICON IN BROWSER -->
+    <!-- <link href="/css/2016_style/img/icon.png" rel="icon" type="image/png"> -->
+  </body>
+  <script>
+    (function () {
+      window.ldfdr = window.ldfdr || {};
+      (function (d, s, ss, fs) {
+        fs = d.getElementsByTagName(s)[0];
+        function ce(src) {
+          var cs = d.createElement(s);
+          cs.src = src;
+          setTimeout(function () {
+            fs.parentNode.insertBefore(cs, fs);
+          }, 1);
+        }
+        ce(ss);
+      })(
+        document,
+        "script",
+        "https://sc.lfeeder.com/lftracker_v1_bElvO73DxJE4ZMqj.js"
+      );
+    })();
+  </script>
+  <!-- Hotjar Tracking Code for www.elixirconf.eu -->
+  <!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1678389,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBJ2M5G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar-fixed-top nav-menu" id="navMenu">
+  <a class="logo" href="#cover"></a>
+  <div class="toggle-menu">
+    <!-- Burger -->
+    <div class="navTrigger">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+  <ul class="nav navigation-bar">
+    
+    
+    <li>
+      <a class="page-scroll" href="#register">TICKETS</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#schedule">Schedule</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#keynotes">Speakers</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#venue">Venue</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#sponsors">Sponsors</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#contact">Contact</a>
+    </li>
+    
+    
+    <li>
+      <div class="dropdown">
+        <a class="dropbtn">Archives
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+          
+          <a href="https://codebeamstockholm.com/archive/may_2023/index.html" target="_blank">May 2023</a>
+          
+
+        </div>
+      </div>
+    </li>
+  </ul>
+</nav> <div class="cover" id="cover" style="background-image: url('/assets/images/BG-web green.jpg');">
+  <div class="logo">
+    <img
+      src="/assets/images/CodeBeamLite_STOCKHOLM-logo-z_ramka-regular.svg"
+      alt="CodeBeam Lite"
+      width="90%"
+    />
+  </div>
+  <div class="col-right">
+    <h4 class="date" style="color: #4DBA12">
+      THE ERLANG AND ELIXIR USER CONFERENCE IN NORDICS
+       <!-- In-person Event<br /> -->
+      <span style="color: #fff; font-size: 22px"><br>Stockholm | 13 May 2024 <br> (tutorials on 14 May)</span><br />
+      
+
+      <span style="color: #fff; font-size: 18px"><br >
+        A full day celebration of the Erlang Ecosystem.
+        <br > <br />
+Join us in celebrating the 30th anniversary of the Erlang/OTP User Conference! Code BEAM Lite Stockholm is here to carry on the amazing legacy of the Erlang Users and Erlang Factory conferences.<br />
+ </span>
+    </h4>
+
+    </span><p>
+
+    </p>
+    <p>
+    <span style="color: #4DBA12;">
+
+
+    </p>
+
+        <!-- highlights -->
+        <!-- Conference and Tutorial Highlights:
+        <br />
+        <a href="/talks/refactoring-via-the-language-server-protocol/">-> Refactoring via the Language Server Protocol</a><br>
+        <a href="/talks/an-elixir-application-to-a-small-hydropower-plant-with-nerves-machines/">-> An Elixir application to a small hydropower plant with Nerves machines</a><br>
+        <a href="/talks/elixir-update/">-> Elixir Update with Andrea Leopardi</a><br>
+        <a href="/talks/deep-dive-in-nx-backends/">-> Deep dive in Nx Backends</a><br>
+        <a href="/trainings/Architecting-reactive-systems/">-> Architecting Reactive Systems with Francesco Cesarini</a>
+        </p> -->
+
+
+        <!-- counter -->
+     <!-- <h4 class="call-for-talks" style="color: #fff; font-size: 22px">
+       <span style="color: #e32dfd;">
+         2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         30+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         300+</span>
+       <br>
+       DAYS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       TRACKS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       SPEAKERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       ATTENDEES
+     </h4>
+     <br> -->
+
+     <!-- call for participation  -->
+
+    <!-- <h4 class="date" style="text-align:center;">Call for Talks for 2022 is open!</h4>
+    <a class="page-scroll btn-outline mb-3 btn-purple" href="https://sessionize.com/code-beam-america-2022/">SUBMIT TALK</a> -->
+    <!--<a class="page-scroll btn-arrow" href="#welcome">
+      <span class="fa fa-chevron-down"></span>
+    </a>-->
+  </div>
+ <!--  <div class="cover-bottom">
+    <h4 class="call-for-talks" style="color: #fff; font-size: 22px">
+      <span style="color: #e32dfd;">CALL FOR TALKS</span>
+      <br>
+      IS OPEN AND CLOSES ON 17 JULY 2022
+    </h4>
+  </div>-->
+</div>
+
+<!-- end of cover -->
+<!-- start of coundown block -->
+
+<!-- end of coundown -->
+
+<!-- end of banner-2 -->
+<div class="section welcome" id="welcome">
+     <h2 class="title">Learn. Share. Inspire.</h2>
+     <hr/>
+
+     <div class="row align-center">
+         <div class="left-content flex-end">
+             <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="400" src="https://www.youtube.com/embed/oMfRhvti734" data-cookieconsent="marketing" width="100%"></iframe>
+         </div>
+         <div class="right-content">
+             <h3 class="text-title mb-1">The Conference for Erlang and Elixir Developers in Sweden</h3>
+
+        <p>     Meet people and companies using and developing high performance, fault-tolerant and resilient applications that scale to billions of users in production in areas like Fintech, eCommerce, IoT, Gaming, Blockchain, Security, Machine Learning and more.
+Code BEAM Stockholm is in the home of Erlang and has a strong community of developers from the Nordics. Come and join us to learn from each other, share knowledge and be inspired all while growing your network of contacts.
+<br><br>More advanced developers will appreciate that our programme is packed with cutting-edge thought provoking talks. At Code BEAM Lite Stockholm we will uncover how BEAM languages are transforming areas like IoT, Fintech, Machine Learning, Blockchain, Security and more!
+
+<br><br>
+<p>
+Developers of every level can expect to learn from each other, share knowledge all while growing our community reach in the Nordics.
+<br></p>
+         </div>
+     </div>
+ </div>
+
+<!-- end of welcome -->
+<div class="banner-1" id="banner-1">
+    <h3 class="text">
+        Would you like to participate as a sponsor of this event? We need support from the community to make Code BEAM Lite Stockholm the best event it can possibly be. In return, we offer sponsors the opportunity to showcase technology and hire new talent. Explore our sponsorship possibilities!
+    </h3>
+    <a class="page-scroll btn-outline btn-purple ml-1" href="mailto:info@codesync.global?Subject=Sponsoring%20Code%20BEAM%20Lite%20Stockholm">Sponsorship</a>
+</div>
+
+<!-- end of banner-1  -->
+
+<!-- end of travelling -->
+<div class="section keynotes" id="keynotes">
+    <h2 class="title">KEYNOTES</h2>
+    <hr/>
+    <div class="items-container">
+
+        
+        
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/ingela-andin/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/ingela.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Ingela Anderton Andin
+                        </h4>
+                    </a>
+                    <p class="item-position">Senior Erlang/OTP core developer</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/why-erlang/">
+                <p class="item-training">
+                    Why Erlang?!</p>
+            </a>
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Hayleigh-Thompson/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/hayleigh-thompson.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Hayleigh Thompson
+                        </h4>
+                    </a>
+                    <p class="item-position">I have an unpublished package for that.</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/The-next-30-years/">
+                <p class="item-training">
+                    The next 30 years</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/francesco-cesarini-new/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/francesco-cesarini.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Francesco Cesarini
+                        </h4>
+                    </a>
+                    <p class="item-position">Founder & Technical Director of Erlang Solutions</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/The-next-30-years/">
+                <p class="item-training">
+                    The next 30 years</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Tommy-Andersson/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/Tommy.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Tommy Andersson
+                        </h4>
+                    </a>
+                    <p class="item-position">Line Manager for Erlang OTP</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/The-next-30-years/">
+                <p class="item-training">
+                    The next 30 years</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/@kiko-fernandez/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/kiko_pfc.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Kiko Fernandez-Reyes
+                        </h4>
+                    </a>
+                    <p class="item-position">Computer Science Engineer </p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/why-erlang/">
+                <p class="item-training">
+                    Why Erlang?!</p>
+            </a>
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/roberto-aloi/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/b4dad364e8a46087e85e1cbf91262d786b7f9795.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Roberto Aloi 
+                        </h4>
+                    </a>
+                    <p class="item-position">Software engineer at  @meta  /  @whatsapp, author of Erlang LS</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/The-next-30-years/">
+                <p class="item-training">
+                    The next 30 years</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Lennart%20Frid%C3%A9n/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/Lennart-Talarbild_2020-400x400.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Lennart Fridén
+                        </h4>
+                    </a>
+                    <p class="item-position">Developer of developers and systems</p>
+                    
+
+
+<!-- keynote -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/keynotes/The-next-30-years/">
+                <p class="item-training">
+                    The next 30 years</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+    </div>
+</div>
+
+<!-- end of keynotes -->
+<div class="section speakers" id="speakers">
+    <h2 class="title">SPEAKERS</h2>
+    <hr/>
+    <div class="items-container">
+
+        
+        
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/peer-stritzinger/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/28ba4fb86762ec94d54290fb1a982a45f8e8efb7.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Peer Stritzinger
+                        </h4>
+                    </a>
+                    <p class="item-position">GRiSP Inventor, Distributed Computing in IoT and everywhere</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Braid-Planet-Scale-Orchestration/">
+                <p class="item-training">
+                    Braid: Planet Scale Orchestration, Secure, Distributed Erlang Nodes from Cloud to Edge and IoT</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Vlad-Luzin/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/vlad-luzin.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Vlad Luzin
+                        </h4>
+                    </a>
+                    <p class="item-position">VP, Product & Engineering, Lynceus.ai</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Self-Healing-Software-Using-Autonomous-LLM-Agents/">
+                <p class="item-training">
+                    Self-Healing Software Using Autonomous LLM Agents</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/lukas-larsson/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/lukas-larsson.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Lukas Larsson
+                        </h4>
+                    </a>
+                    <p class="item-position">Erlang/OTP team member</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Documenting/">
+                <p class="item-training">
+                    Documenting Erlang/OTP</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Cons-T-Ahs/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/cons-t-ahs.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Cons T Åhs
+                        </h4>
+                    </a>
+                    <p class="item-position">Analysing Erlang (and more) at WhatsApp</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+            <a href="/talks/Analysing-and-Understanding-Erlang-Programmatically/">
+                <p class="item-training">
+                    Analysing and Understanding Erlang Programmatically</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Samanta-de-Araujo/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/samanta-de-araujo.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Samanta de Araújo
+                        </h4>
+                    </a>
+                    <p class="item-position">Software Engineering</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Lecture-Proposal/">
+                <p class="item-training">
+                    Migrating from C# to Elixir</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Peter-Saxton/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/peter-saxton.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Peter Saxton
+                        </h4>
+                    </a>
+                    <p class="item-position">Northvolt</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+            <a href="/talks/BEAMs-bright-future-with-Gleam-and-JavaScript/">
+                <p class="item-training">
+                    BEAM's bright future with Gleam (and JavaScript?)</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/thomas-arts/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/thomas-arts.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Thomas Arts
+                        </h4>
+                    </a>
+                    <p class="item-position">Quviq, CTO</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Fault-tolerance-guarantees-in-AWS-cloud-transition/">
+                <p class="item-training">
+                    Fault tolerance guarantees in AWS cloud transition</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Martin-Sumner/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/Martin-Sumner.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Martin Sumner
+                        </h4>
+                    </a>
+                    <p class="item-position">Consultant, Airelogic</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/talks/Fault-tolerance-guarantees-in-AWS-cloud-transition/">
+                <p class="item-training">
+                    Fault tolerance guarantees in AWS cloud transition</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Daniel-Szoboszlay/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/daniel-szoboszlay.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Dániel	Szoboszlay
+                        </h4>
+                    </a>
+                    <p class="item-position">Juggling the data of Europe's biggest fintech unicorn</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+    </div>
+</div>
+
+<!-- end of speakers -->
+<div class="section register" id="register">
+    <h2 class="title">REGISTER</h2>
+    <hr/></br></br>
+    <div class="register-widget" id="eventbrite-widget-container-816784433227">&nbsp;</div>
+
+    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '816784433227',
+            iframeContainerId: 'eventbrite-widget-container-816784433227',
+
+            // Optional
+            iframeContainerHeight: 700,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
+</div>
+
+<!-- end of register -->
+
+<!-- end of recordings -->
+
+<!-- end of video -->
+<div class="section schedule" id="schedule">
+    <h2 class="title">SCHEDULE</h2>
+    <div>
+      <script type="text/javascript" src="https://sessionize.com/api/v2/hztcohpr/view/GridSmart">
+      </script>
+    </div>
+    </hr>
+ </div>
+
+<!-- end of schedule -->
+
+<!-- end of hybrid -->
+
+<!-- end of lightningtalks -->
+<div class="section trainers" id="trainers">
+    <h2 class="title">TRAINERS</h2>
+    <hr/>
+    <div class="items-container">
+
+
+        
+        
+
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/natalia-chechina/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/natalia-chechina.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Natalia Chechina
+                        </h4>
+                    </a>
+                    <p class="item-position">One of the Core Authors of SD Erlang, Senior Developer @ Erlang Solutions</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/trainings/observability-and-debugging-on-the-beam/">
+                <p class="item-training">
+                    Observability & Debugging on the BEAM</p>
+            </a>
+        
+    
+        
+    
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/francesco-cesarini-new/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/francesco-cesarini.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Francesco Cesarini
+                        </h4>
+                    </a>
+                    <p class="item-position">Founder & Technical Director of Erlang Solutions</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/trainings/observability-and-debugging-on-the-beam/">
+                <p class="item-training">
+                    Observability & Debugging on the BEAM</p>
+            </a>
+        
+    
+        
+    
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Brian-Underwood/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/brian-underwood.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Brian Underwood
+                        </h4>
+                    </a>
+                    <p class="item-position">Consultant at Erlang Solutions</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+    
+        
+            <a href="/trainings/Secure-Coding-In-Elixir/">
+                <p class="item-training">
+                    Secure Coding In Elixir</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Robert-Virding/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/robert-virding.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Robert Virding
+                        </h4>
+                    </a>
+                    <p class="item-position">Co-Creator of Erlang</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+            <a href="/trainings/Secure-Coding-In-Erlang/">
+                <p class="item-training">
+                    Secure Coding In Erlang</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Dmytro-Lytovchenko/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/dmytro-Lytovchenko.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Dmytro Lytovchenko
+                        </h4>
+                    </a>
+                    <p class="item-position">Working with what others deem too hard or impossible</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+    
+        
+    
+        
+    
+        
+    
+        
+            <a href="/trainings/Working-With-Legacy-Code/">
+                <p class="item-training">
+                    Working With Legacy Code</p>
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+                </div>
+            
+        
+    </div>
+</div>
+<!-- end of trainers -->
+
+<!-- end of training -->
+
+<!-- end of banner-3 -->
+<div class="section welcome" id="diversity">
+    <h2 class="title">DIVERSITY</h2>
+    <hr/>
+    <p class="text-content">
+       Thanks to Erlang Solutions we're running a Diversity & Inclusion Programme for Code BEAM Lite Stockholm! </br>The goal of the programme is to increase the diversity of attendees and offer support to groups underrepresented in the tech community who would not otherwise be able to attend the conference. The Diversity & Inclusion Programme focuses primarily on empowering women, ethnic minorities or people with disabilities, among others, but everybody is welcome to apply.
+
+ Read more about the process <a href="https://codesync.global/opportunity-scheme/" target="_blank">here</a>.
+    </p>
+    <p class="text-content mb-5" align="center" style="margin-top:3em">
+    <a class="page-scroll btn-outline btn-orange mb-5 btn-orange" href="https://docs.google.com/forms/d/e/1FAIpQLSenG0D_JGUiPJPuD9NSavp1aJnCcVMA62J3jgWcQtM7d4N2kg/viewform?usp=sf_link">Apply</a>
+</div>
+ 
+<!-- end of diversity -->
+
+<!-- end of volunteer -->
+
+<!-- end of cft  -->
+<div class="section speakers" id="members">
+    <h2 class="title">PROGRAMME COMMITTEE</h2>
+    <hr/>
+    <div class="items-container">
+
+        
+        
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/stavros-aronis/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/b80fb19db6dacdc17ae07ca0fc7cb8cb2c2ceeb1-2.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Stavros Aronis
+                        </h4>
+                    </a>
+                    <p class="item-position">Developer and Trainer at Erlang Solutions</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Lars-Wikman/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/lars-wikman.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Lars Wikman
+                        </h4>
+                    </a>
+                    <p class="item-position">Consultant & contractor. Enjoying many aspects of code life.</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/ingela-andin/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/ingela.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Ingela Anderton Andin
+                        </h4>
+                    </a>
+                    <p class="item-position">Senior Erlang/OTP core developer</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/jesper-eskilson/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/jesper-eskilson.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Jesper Eskilson
+                        </h4>
+                    </a>
+                    <p class="item-position">Erlang Community Lead and Lead Engineer at Klarna</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/sebastian-strollo/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/sebastian.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Sebastian Strollo
+                        </h4>
+                    </a>
+                    <p class="item-position">Erlang Developer and Cofounder at Avassa</p>
+                    
+
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+
+<!-- speaker -->
+
+                </div>
+            
+        
+    </div>
+</div>
+
+<!-- end of members  -->
+
+<!-- end of hotels -->
+
+<!-- end of covid-19 -->
+
+<!-- end of shop -->
+
+<!-- end of blog -->
+<div class="banner-1" id="student">
+    <h3 class="text">
+        Contact us for Special <strong>Students</strong> and <strong>Group</strong> Discounts
+    </h3>
+    <a class="page-scroll btn-outline btn-purple ml-1" href="mailto:info@codesync.global?Subject=Discount">Contact</a>
+</div>
+
+<!-- end of banner-5 -->
+<div class="section venue" id="venue" style="background-image: url('/assets/images/Palmsalenblack.jpg');">
+    <div class="row">
+        <div class="left-content left">
+            <h2 class="title">VENUE</h2>
+            <hr/>
+            <p class="venue-subtitle">7A Odenplan</p>
+            <p class="venue-text">Norrtullsgatan 6,<br>
+                113 29 Stockholm,<br>
+                Sweden<br>
+              +46 8 586 107 00</p>
+                <h2 class="venue-subtitle">
+                  <strong><a href="https://7a.se/en/facility/7a-odenplan/" style="color: #4DBA12" target="_blank">VENUE DETAILS</a><br>
+                </h2>
+
+        </div>
+        <div class="right-content">
+            <br/>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf-F7nBzxi_73uI9QUxRQ-cNihYtlZ_AA"></script>
+<div>
+    <div id="gmap_canvas"></div>
+</div>
+<script type="text/javascript">
+    function init_map() {
+        var myOptions = {
+            zoom: 14,
+            scrollwheel: false,
+            center: new google.maps.LatLng(59.34252302986197, 18.051692626812088),
+            mapTypeId: google
+                .maps
+                .MapTypeId
+                .ROADMAP,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#c9c9c9"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }
+            ]
+        };
+        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(59.34252302986197, 18.051692626812088)
+        });
+        infowindow = new google.maps.InfoWindow({content: "<span><strong>7A Odenplan</strong><br>Norrtullsgatan 6, 113 26 Stockholm, Sweden<br><span>"});
+        google
+            .maps
+            .event
+            .addListener(marker, "click", function () {
+                infowindow.open(map, marker);
+            });
+        infowindow.open(map, marker);
+    }
+    google
+        .maps
+        .event
+        .addDomListener(window, "load", init_map);
+</script>
+
+        </div>
+    </div>
+
+
+</div>
+
+<!-- end of venue -->
+<div class="section sponsor" id="sponsors">
+    <h2 class="title">SPONSORS</h2>
+    <hr/>
+
+  <!-- <p class="section-text">
+        Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac
+                                                                                            ante ipsum primis
+    </p> -->
+
+<div class="row sponsors">
+      <!--    <h2 class="sponsor-title">Diversity & Inclusion Sponsor</h2>
+          <a href="https://www.pepsico.com" target="_blank">
+               <img src="/assets/images/sponsors/pepsi.png" alt="PepsiCo"/>
+          </a>
+      <h2 class="sponsor-title">Platinum Sponsors</h2>
+            <a href="https://www.emqx.com/en" target="_blank">
+                 <img src="/assets/images/sponsors/EMQ-Logo.png" alt="EMQ" />
+            </a>
+            <a href="https://jobs.lever.co/teller" target="_blank">
+                 <img src="/assets/images/sponsors/Teller-logo.png" alt="Teller" />
+            </a>
+        <h2 class="sponsor-title">Platinum Sponsors</h2>
+                  <a href="https://www.kivra.se" target="_blank">
+                       <img src="/assets/images/Kivra_Logo.png" alt="Kivra" style="height: 5em;">
+                  </a>
+                &nbsp
+                            <a href="https://www.aeternity.com/" target="_blank">
+                                <img src="/assets/images/Aeternity2.png" alt="aeternity" style="height: 5em;">
+                            </a>
+<br/><br/><br /><br  />-->
+        <h2 class="sponsor-title">Diversity & Inclusion Sponsor</h2>
+
+            <a href="https://www.erlang-solutions.com/" target="_blank">
+                <img src="/assets/images/erlang-solutions-logo_erlang-solutions-logo-black.png" alt="erlang solutions">
+            </a>
+            &nbsp
+
+            <h2 class="sponsor-title">Platinum Sponsor</h2>
+
+
+                <a href="https://seventhstate.io" target="_blank">
+                    <img src="/assets/images/7S_LAND.Primary.png" alt="Seveenth State" />
+                </a>
+
+<h2 class="sponsor-title">Gold Sponsor</h2>
+
+
+                <a href="https://stritzinger.com" target="_blank">
+                    <img src="/assets/images/grisp-io_.png" alt="Peer Stritzinger"  style="height: 9em;"/>
+                </a>
+
+
+
+        <!-- Sponsors Carousel -->
+                    <!-- <div id="testimonials-carousel" class="sponsor-testimonial">
+      
+      <h3 class="name">Johnatan Doe</h3>
+
+      
+      <h3 class="name">Adam Smith</h3>
+
+      
+      <h3 class="name">Irene Warner</h3>
+
+      
+      <h3 class="name">Richard Ryan</h3>
+
+      
+    </div> -->
+    </div>
+</div>
+
+<!-- end of sponsors -->
+<!-- start of  testimonials  block -->
+
+<!-- end of  testimonials  block -->
+
+
+<!-- end of gallery-grid  -->
+
+<!-- end of newsletter -->
+<div class="section contact" id="contact">
+    <h2 class="title">CONTACT US</h2>
+    <hr/>
+    <p class="section-text mb-3">
+    Questions? Leave Us A Message.
+    </p>
+
+    <a class="page-scroll btn-outline btn-purple ml-1" href="mailto:info@codesync.global?Subject=Code BEAM Lite Stockholm">Send Message</a>
+</div>
+
+<!-- end of contact -->
+
+
+<!-- modal block -->
+ <div class="footer" id="footer">
+  <div class="social-icons">
+    <a href="https://www.youtube.com/c/CodeSync" target="_blank">
+      <svg
+        aria-hidden="true"
+        data-prefix="fab"
+        data-icon="youtube"
+        class="svg-inline--fa fa-youtube fa-w-18"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+      >
+        <path
+          fill="#4DBA12"
+          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+        ></path>
+      </svg>
+    </a>
+    <a href="https://twitter.com/codebeamio?lang=en" target="_blank">
+      <svg
+        aria-hidden="true"
+        data-prefix="fab"
+        data-icon="twitter"
+        class="svg-inline--fa fa-twitter fa-w-16"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="#4DBA12"
+          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        ></path>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/company/code-sync/" target="_blank">
+      <svg
+        aria-hidden="true"
+        data-prefix="fab"
+        data-icon="linkedin-in"
+        class="svg-inline--fa fa-linkedin-in fa-w-14"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="#4DBA12"
+          d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"
+        ></path>
+      </svg>
+    </a>
+  </div>
+  <hr />
+  <p>All Rights Reserved</p>
+  <p>
+    <strong>Code Sync</strong>
+    © 2022 Copyright
+  </p>
+  <p>
+    <strong>Organised by</strong>
+    <a href="https://codesync.global">Code Sync</a> powered by <a href="https://www.erlang-solutions.com/?utm_source=elixirconf&utm_medium=referral">Erlang Solutions</a>
+  </p>
+
+  <p>
+    <br />
+      
+      <a href="https://codesync.global/terms_and_conditions/"> Terms of use</a>
+      |
+      <a href="https://codesync.global/about-us/#Conduct"> Code of Conduct</a>
+      |
+      <a href="https://codesync.global/privacy_policy/"> Privacy Policy</a>
+      |
+      <a href="https://codesync.global/page/18/"> Anti-Slavery Policy</a>
+
+  </p>
+</div>
+
+    <!-- jQuery Version 1.11.0 -->
+<script src="/assets/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/jquery.easing.min.js"></script>
+<script src="/assets/js/classie.js"></script>
+<script src="/assets/js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/assets/js/agency.js"></script>
+
+<!-- Owl Carousel -->
+<script src="/assets/js/owl.carousel.min.js" charset="utf-8"></script>
+
+
+<!-- Parallaxing & SmoothScroll -->
+<script src="/assets/js/scrollax.min.js" charset="utf-8"></script>
+
+
+
+<!-- Main JS -->
+<script src="/assets/js/main.js" charset="utf-8"></script>
+<script type="text/javascript">
+piAId = '24452';
+piCId = '63005';
+piHostname = 'pi.pardot.com';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+  </body>
+</html>

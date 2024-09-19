@@ -1,0 +1,95 @@
+title:
+description: # this means to ignore newlines until "baseurl:"
+  A full-day Erlang and Elixir conference in New York City - Nov 15 2024.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://codebeamnyc.com" # the base hostname & protocol for your site
+
+logo: "./assets/images/logonyc.svg"
+
+# google_site_verification: googleXXXXXXXXXXXXXXXX.html
+
+include: [archive]
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/codebeamio
+    username: codebeamio
+    card: image
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+  participants:
+    output: true
+  testimonials:
+    output: true
+  keynotes:
+    output: true
+  trainers:
+    output: true
+  trainings:
+    output: true
+  talks:
+    output: true
+  posts:
+    output: true
+  videos:
+    output: true
+#  archive:
+#    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "participants"
+    values:
+      layout: "participant"
+  - scope:
+      path: ""
+      type: "trainings"
+    values:
+      layout: "training"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
+  - scope:
+      path: ""
+      type: "keynotes"
+    values:
+      layout: "talk"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "video"
+#  - scope:
+#      path: ""
+#      type: "archives"
+#    values:
+#      layout: "archive"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Google Map JS api
+# This is my api for this template
+key-api: AIzaSyBf-F7nBzxi_73uI9QUxRQ-cNihYtlZ_AA
+map-text: Littlefield
+map-text-location: 635 Sackett St, Brooklyn, NY 11217, United States
+map-lat: 40.67875709829897
+map-lng: -73.98338124907563

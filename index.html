@@ -1,0 +1,85 @@
+---
+layout: default
+title: Code BEAM Lite NYC 2024
+image: assets/images/NYC2024-banner.png
+
+---
+{% include cover.html %}
+<!-- end of cover -->
+<!-- start of coundown block -->
+{% if site.data.settings.homepage_settings.countdown.show %}
+  {% include countdown.html  %}
+{% endif %}
+<!-- end of coundown -->
+{% comment %} {% include banner-2.html %} {% endcomment %}
+<!-- end of banner-2 -->
+{% include welcome.html %}
+<!-- end of welcome -->
+{% include banner-1.html %}
+<!-- end of banner-1  -->
+{% comment %} {% include travelling.html %} {% endcomment %}
+<!-- end of travelling -->
+{% comment %} {% include keynotes.html %} {% endcomment %}
+<!-- end of keynotes -->
+{% include speakers.html %}
+<!-- end of speakers -->
+{% include register.html %}
+<!-- end of register -->
+{% comment %} {% include recordings.html %} {% endcomment %}
+<!-- end of recordings -->
+{% comment %} {% include video.html %} {% endcomment %}
+<!-- end of video -->
+{% include schedule.html %}
+<!-- end of schedule -->
+{% comment %} {% include mentoring.html %} {% endcomment %}
+<!-- end of hybrid -->
+{% comment %} {% include lightningtalks.html %} {% endcomment %}
+<!-- end of lightningtalks -->
+{% comment %} {% include trainers.html %} {% endcomment %}
+<!-- end of trainers -->
+{% include training.html %}
+<!-- end of training -->
+{% comment %} {% include banner-3.html %} {% endcomment %}
+<!-- end of banner-3 -->
+{% comment %} {% include diversity.html %} {% endcomment %}
+<!-- end of diversity -->
+{% comment %} {% include banner-4.html %} {% endcomment %}
+<!-- end of volunteer -->
+{% comment %} {% include cft.html %} {% endcomment %}
+<!-- end of cft  -->
+{% include members.html %}
+<!-- end of members  -->
+{% comment %} {% include hotels.html %} {% endcomment %}
+<!-- end of hotels -->
+{% comment %} {% include covid-19.html %} {% endcomment %}
+<!-- end of covid-19 -->
+{% comment %} {% include shop.html %} {% endcomment %}
+<!-- end of shop -->
+{% comment %} {% include blog.html %} {% endcomment %}
+<!-- end of blog -->
+{% comment %} {% include banner-5.html %} {% endcomment %}
+<!-- end of banner-5 -->
+{% include venue.html %}
+<!-- end of venue -->
+{% include sponsors.html %}
+<!-- end of sponsors -->
+<!-- start of  testimonials  block -->
+{% if site.data.settings.homepage_settings.testimonials.show %}
+  {% include testimonials.html  %}
+{% endif %}
+<!-- end of  testimonials  block -->
+
+{% if site.data.settings.homepage_settings.gallery.show %}
+  {% include gallery-grid.html %}
+{% endif %}
+<!-- end of gallery-grid  -->
+{% comment %} {% include newsletter.html %} {% endcomment %}
+<!-- end of newsletter -->
+{% include contact.html %}
+<!-- end of contact -->
+
+
+<!-- modal block -->
+{% if site.data.settings.homepage_settings.modal.show %}
+  {% include modal.html %}
+{% endif %}

@@ -1,0 +1,48 @@
+#- name: Home
+#  link: "cover"
+#- name: Welcome
+#  link: "welcome"
+- name: TICKETS
+  link: "register"
+#- name: Waiting List
+#  link: "newsletter"
+#- name: Call for Tutorials
+#  link: "call-for-tutorials"
+#- name: All Recordings
+#  link: "recordings"
+# name: Student
+#  link: "student"
+#- name: Public videos
+#  link: "video"
+- name: Schedule
+  link: "schedule"
+- name: Speakers
+  link: "speakers"
+#- name: Mentoring
+#  link: "mentoring"
+#- name: Trainers
+#  link: "trainers"
+- name: Tutorial
+  link: "training"
+# name: Call for Talks
+#  link: "cft"
+#- name: Diversity
+#  link: "diversity"
+#- name: Volunteer
+#  link: "volunteer"
+#- name: Hotels
+#  link: "hotels"
+#- name: COVID-19 safety
+#  link: "covid-19"
+#- name: E-SHOP
+#  link: "shop"
+#- name: Blog
+#  link: "blog"
+- name: Programme Committee
+  link: "members"
+- name: Venue
+  link: "venue"
+- name: Sponsors
+  link: "sponsors"
+- name: Contact
+  link: "contact"
