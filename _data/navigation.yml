@@ -20,12 +20,12 @@
 #  link: "speakers"
 #- name: Mentoring
 #  link: "mentoring"
-- name: Trainers
-  link: "trainers"
-- name: Tutorial
-  link: "training"
 - name: "Call for Talks"
   link: "cft"
+- name: Trainers
+  link: "trainers"
+- name: Training
+  link: "training"
 #- name: Diversity
 #  link: "diversity"
 #- name: Volunteer
