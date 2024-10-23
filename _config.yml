@@ -89,7 +89,7 @@ defaults:
 # Google Map JS api
 # This is my api for this template
 key-api: AIzaSyBf-F7nBzxi_73uI9QUxRQ-cNihYtlZ_AA
-map-text: Littlefield
-map-text-location: 635 Sackett St, Brooklyn, NY 11217, United States
-map-lat: 40.67875709829897
-map-lng: -73.98338124907563
+map-text: CodeNode
+map-text-location: 10 South Pl, London EC2M 7EB, United Kingdom
+map-lat: 51.51880074629277
+map-lng: -0.08573684672307866

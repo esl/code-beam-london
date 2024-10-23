@@ -20,10 +20,10 @@
 #  link: "speakers"
 #- name: Mentoring
 #  link: "mentoring"
-#- name: Trainers
-#  link: "trainers"
-#- name: Tutorial
-#  link: "training"
+- name: Trainers
+  link: "trainers"
+- name: Tutorial
+  link: "training"
 - name: "Call for Talks"
   link: "cft"
 #- name: Diversity
@@ -40,9 +40,9 @@
 #  link: "blog"
 #- name: Programme Committee
 #  link: "members"
-#- name: Venue
-#  link: "venue"
-#- name: Sponsors
-#  link: "sponsors"
+- name: Venue
+  link: "venue"
+- name: Sponsors
+  link: "sponsors"
 - name: Contact
   link: "contact"
