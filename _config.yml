@@ -4,7 +4,7 @@ description: # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://codebeamlondon.com" # the base hostname & protocol for your site
 
-logo: "./assets/images/CBL_London_Logo.svg"
+logo: "./assets/images/CBL_London_Logo.png"
 
 # google_site_verification: googleXXXXXXXXXXXXXXXX.html
 
