@@ -1,8 +1,8 @@
 homepage_settings:
   countdown:
-    show: false
+    show: true
     timezone: Europe/London
-    deadline: 2025-01-31 12:00
+    deadline: 2025-01-31 09:00
   modal:
     show: false
     delay: 5000
@@ -10,5 +10,5 @@ homepage_settings:
     show: false
     title: "Testimonials"
   gallery:
-    show: false
-    title: "Code BEAM Lite London 2025"
+    show: true
+    title: "Code BEAMs"
