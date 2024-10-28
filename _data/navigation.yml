@@ -22,8 +22,8 @@
 #  link: "mentoring"
 - name: "Call for Talks"
   link: "cft"
-- name: Trainers
-  link: "trainers"
+#- name: Trainers
+#  link: "trainers"
 - name: Tutorial
   link: "training"
 #- name: Diversity
