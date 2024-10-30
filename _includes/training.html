@@ -18,12 +18,17 @@
 
             <div class="item-col item-training">
                 <a href="{{training.url | relative_url }}">
-                    <p class="item-title">{{training.title }}</p>
+                    <p class="item-title">
+                        {% assign words = training.name | split: ' ' %} {% for
+                        word in words %} {% if word == 'TDD' %} {{ word }} {%
+                        elsif word == 'RESTful' %} {{ word }} {% else %} {{ word
+                        | capitalize }} {% endif %} {% unless forloop.last %} {%
+                        endunless %} {% endfor %}
+                    </p>
                 </a>
                 {% for trainer_path in training.trainers %} {% assign
                 participant = site.participants | where_exp: "x", "trainer_path
                 == x.path" | first %}
-
                 <a href="{{ participant.url | relative_url }}">
                     <p class="item-trainer">Trainer: {{ participant.name}}</p>
                 </a>
