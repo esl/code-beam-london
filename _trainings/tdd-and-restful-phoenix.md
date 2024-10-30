@@ -15,6 +15,7 @@ You'll learn how to implement and test a REST API from scratch, using Phoenix's 
 for writing, running, and automating tests.
 
 **DELIVERY CHANNEL**
+
 In person
 
 **EXPERTISE**
@@ -31,7 +32,7 @@ Intermediate
 
 **TRAINING OBJECTIVES**
 
-- Grasp the core principles of TDD and how to apply the **Red-Green-Refactor** cycle to guide
+- Grasp the core principles of TDD and how to apply the Red-Green-Refactor cycle to guide
 the development process.
 - Learn how TDD ensures code reliability, reduces bugs, and encourages better code
 design through incremental testing.
