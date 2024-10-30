@@ -1,11 +1,13 @@
 ---
-pic_url: /assets/images/claudio-ortolina.jpg
 name: Claudio Ortolina
-tagline: Building things and cooking food
-twitter: cloud8421
+pic_url: "/assets/images/claudio-ortolina.jpg"
+tagline: Software Engineer and Speaker
 github: cloud8421
+twitter: cloud8421
+
 ---
+Claudio Ortolina is a software professional with almost 15 years of experience. Over time, he wore different hats ranging from engineering, to management and CTO.
 
-<p>Claudio is a software engineer at PSPDFKit GmbH. He's got more than 9 years of commercial experience in complex web applications and apis, with expertise in Elixir, Ruby, Elm and JavaScript and he previously worked at New Bamboo Web Development Ltd. (now part of Thoughtbot Inc.), and Erlang Solutions Ltd.
+He's been a proponent of Elixir since 2013, and gave numerous talks on different subjects related to the BEAM ecosystem.
 
-He's an active member of the Elixir and Elm community and he has spoken at different conferences (like ElixirConf EU, ElixirConf US and ElixirLDN) and various user groups, with a focus around code architecture, patterns and tooling. </p>
+He previously worked at Nutrient (formerly known as PSPDFKit), Erlang Solutions, New Bamboo Web Development Ltd. (now part of Thoughtbot Inc.) between London and Istanbul.

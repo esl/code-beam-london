@@ -24,7 +24,7 @@
   link: "cft"
 #- name: Trainers
 #  link: "trainers"
-- name: Tutorial
+- name: Training/Tutorial
   link: "training"
 #- name: Diversity
 #  link: "diversity"
@@ -38,8 +38,8 @@
 #  link: "shop"
 #- name: Blog
 #  link: "blog"
-#- name: Programme Committee
-#  link: "members"
+- name: Programme Committee
+  link: "members"
 - name: Venue
   link: "venue"
 - name: Sponsors
