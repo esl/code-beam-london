@@ -2,7 +2,7 @@
 published: true
 experience:
 - Intermediate
-name: "TDD and RESTful Phoenix"
+name: TDD and RESTful Phoenix
 type: training
 trainers:
 - _participants/tee-teoh.md
@@ -16,7 +16,7 @@ for writing, running, and automating tests.
 
 **DELIVERY CHANNEL**
 
-In person
+In person,
 
 **EXPERTISE**
 
@@ -24,7 +24,7 @@ Intermediate
 
 **DURATION**
 
-8 hours (including breaks and lunch)
+3 days of 8 hours (including breaks and lunch)
 
 **PREREQUISITES**
 

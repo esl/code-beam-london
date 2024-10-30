@@ -15,7 +15,15 @@
             <div class="training-head">
                 <div class="training-col">
                     <h1 class="training-name">
-                        {{ page.title }}
+                        {% assign words = page.name | split: ' ' %}
+                        {% for word in words %}
+                            {% if word == 'TDD' %}
+                                {{ word }}
+                            {% else %}
+                                {{ word | capitalize }}
+                            {% endif %}
+                            {% unless forloop.last %} {% endunless %}
+                        {% endfor %}
                     </h1>
                     {% assign schedule = site.data.training-list.trainings |  where_exp: "item", "item.training == page.path" | first  %}
                     <div class="training-info">
