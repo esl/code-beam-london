@@ -1,5 +1,5 @@
 ---
-name: Alanna Mcentegart
+name: Alanna McEntegart
 pic_url: "/assets/images/alanna-mcentegart.jpg"
 tagline: Computer Scientist turned Business Analyst
 
