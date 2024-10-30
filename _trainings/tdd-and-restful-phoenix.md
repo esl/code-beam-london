@@ -16,7 +16,7 @@ for writing, running, and automating tests.
 
 **DELIVERY CHANNEL**
 
-In person,
+In person
 
 **EXPERTISE**
 
