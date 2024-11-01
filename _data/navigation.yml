@@ -16,8 +16,6 @@
 #  link: "video"
 #- name: Schedule
 #  link: "schedule"
-- name: Speakers
-  link: "speakers"
 #- name: Mentoring
 #  link: "mentoring"
 - name: "Call for Talks"
@@ -26,6 +24,8 @@
 #  link: "trainers"
 - name: Training/Tutorial
   link: "training"
+- name: Speakers
+  link: "speakers"
 #- name: Diversity
 #  link: "diversity"
 #- name: Volunteer
