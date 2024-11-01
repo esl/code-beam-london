@@ -16,8 +16,8 @@
 #  link: "video"
 #- name: Schedule
 #  link: "schedule"
-#- name: Speakers
-#  link: "speakers"
+- name: Speakers
+  link: "speakers"
 #- name: Mentoring
 #  link: "mentoring"
 - name: "Call for Talks"
