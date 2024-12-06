@@ -20,4 +20,4 @@ For example, it will describe networking API and how socket became first-class c
 - Introducing the audience to key AtomVM capabilities.
 
 **TARGET AUDIENCE:**
-- Data scientists from outside the Elixir ecosystem, folks using the BEAM who may not be doing data science or machine learning, anyone interested in data science work.
+- Elixir and Erlang developers. IoT enthusiasts
