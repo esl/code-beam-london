@@ -2,7 +2,7 @@
 tags:
 - Year in review
 level: Beginners, Intermediate users, Proficient users
-title: "Gleam's First Year"
+title: "Keynote: Gleam's First Year"
 speakers:
 - _participants/louis-pilfold.md
 
