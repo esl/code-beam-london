@@ -1,12 +1,8 @@
 ---
 level:
-- Beginner
-- Intermediate
-- Advanced
+- Beginner, Intermediate, Advanced
 tags:
-- OTP
-- Tau5
-- education
+- OTP, Tau5, education
 title: "Keynote: Introducing Tau5 - A New BEAM-Powered Live Coding Platform"
 speakers:
 - _participants/sam-aaron.md
@@ -21,9 +17,7 @@ What would it be like to rewrite Sonic Pi using BEAM technologies as the foundat
 Get ready for some serious live coded beats, visuals and a window into an exciting future of computing education.
 
 **TALK OBJECTIVES:**
-
-This talk aims to discuss the importance of engaging the whole of society in Computer Science - not just professional programmers. It will also introduce and demonstrate the deep technical design necessary to make complex concepts such as concurrency simple to use and teach. Ultimately it aims to get the audience excited about programming as a means of expression - not just a tool for business.
+- This talk aims to discuss the importance of engaging the whole of society in Computer Science - not just professional programmers. It will also introduce and demonstrate the deep technical design necessary to make complex concepts such as concurrency simple to use and teach. Ultimately it aims to get the audience excited about programming as a means of expression - not just a tool for business.
 
 **TARGET AUDIENCE:**
-
-Everyone that codes and especially those that don’t (yet).
+- Everyone that codes and especially those that don’t (yet).
