@@ -14,8 +14,8 @@
 #  link: "student"
 #- name: Public videos
 #  link: "video"
-#- name: Schedule
-#  link: "schedule"
+- name: Schedule
+  link: "schedule"
 #- name: Mentoring
 #  link: "mentoring"
 #- name: "Call for Talks"
