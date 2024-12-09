@@ -7,7 +7,7 @@ tags:
 - OTP
 - Tau5
 - education
-title: "Introducing Tau5 - a new BEAM-powered live coding platform"
+title: "Keynote: Introducing Tau5 - A New BEAM-Powered Live Coding Platform"
 speakers:
 - _participants/sam-aaron.md
 
