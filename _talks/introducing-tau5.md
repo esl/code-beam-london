@@ -2,7 +2,9 @@
 level:
 - Beginner, Intermediate, Advanced
 tags:
-- OTP, Tau5, education
+- OTP
+- Tau5
+- Education
 title: "Keynote: Introducing Tau5 - A New BEAM-Powered Live Coding Platform"
 speakers:
 - _participants/sam-aaron.md
