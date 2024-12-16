@@ -1,7 +1,7 @@
 ---
 name: Sam Aaron
 pic_url: "/assets/images/1200px-sam_aaron_at_yow-_night_2018_perth-_december_2018_05.jpg"
-tagline: 'Live Coding Artist'
+tagline: 'Sonic Pi Creator'
 github: samaaron
 twitter: samaaron
 

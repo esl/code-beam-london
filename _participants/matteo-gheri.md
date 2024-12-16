@@ -1,7 +1,7 @@
 ---
 name: Matteo Gheri
 pic_url: "/assets/images/matteo-gheri.jpeg"
-tagline: Dev @ Pocektworks
+tagline: Dev @ Pocketworks
 linkedin: /in/matteo-gheri/
 
 ---
