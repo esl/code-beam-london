@@ -22,7 +22,7 @@
 #  link: "cft"
 #- name: Trainers
 #  link: "trainers"
-- name: Training/Tutorial
+- name: Tutorial
   link: "training"
 - name: Speakers
   link: "speakers"
