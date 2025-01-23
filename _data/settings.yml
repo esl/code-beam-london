@@ -1,6 +1,6 @@
 homepage_settings:
   countdown:
-    show: true
+    show: false
     timezone: Europe/London
     deadline: 2025-01-31 09:00
   modal:
