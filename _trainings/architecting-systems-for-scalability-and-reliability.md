@@ -6,7 +6,7 @@ name: Architecting Systems for Scalability and Reliability
 type: tutorial
 trainers:
 - _participants/francesco-cesarini.md
-venue: THE LOOM, SUITE 2.05, 14 Gower's Walk, London E1 8PY
+venue: THE LOOM, 14 Gower's Walk, London E1 8PY
 
 ---
 Learn how to architect fault-tolerant, scalable, soft, real-time systems with requirements for high availability.
