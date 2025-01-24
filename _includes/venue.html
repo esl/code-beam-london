@@ -1,10 +1,11 @@
 <div class="venue-wrapper">
+    <!-- Original Venue Section -->
     <div class="venue-container">
         <div class="section venue" id="venue">
             <div class="row">
                 <div class="left-content">
                     <div class="venue-text-container">
-                        <h2 class="title">VENUE</h2>
+                        <h2 class="title">CONFERENCE VENUE</h2>
                         <hr class="venue-divider" />
                         <p class="venue-subtitle">CodeNode</p>
                         <p class="venue-text">
@@ -27,207 +28,23 @@
                     <div class="map-container">{% include map.html %}</div>
                 </div>
             </div>
+
+            <!-- Tutorial Venue Section (now inside the same container) -->
+            <div class="row tutorial-venue" style="margin-top: 3rem">
+                <div class="left-content">
+                    <div class="venue-text-container">
+                        <h2 class="title">TUTORIAL VENUE</h2>
+                        <hr class="venue-divider" />
+                        <p class="venue-subtitle">The Loom</p>
+                        <p class="venue-text">
+                            <i class="fas fa-map-marker-alt"></i> Suite 2.05, 14
+                            Gower's Walk,<br />
+                            E1 8PY, <br />
+                            London
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<style>
-    .venue-wrapper {
-        background-color: #1a1a1a;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Prevent content overflow */
-    }
-
-    .venue-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .venue {
-        padding: 4rem 0;
-        background-image: url("{{site.baseurl}}/assets/images/codenodevenuebw.png");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-    .venue::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 1;
-    }
-
-    .row {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-        position: relative;
-        z-index: 2;
-        width: 100%;
-    }
-
-    .left-content {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        opacity: 0;
-        transform: translateX(-20px);
-        animation: slideIn 0.8s ease forwards;
-    }
-
-    .venue-text-container {
-        padding: 2rem;
-    }
-
-    .right-content {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transform: translateX(20px);
-        animation: slideIn 0.8s ease forwards 0.2s;
-    }
-
-    .map-container {
-        width: 100%;
-        max-width: 500px;
-        aspect-ratio: 4/3; /* This maintains a consistent ratio */
-        position: relative;
-        overflow: hidden;
-    }
-
-    .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-        border: 0;
-    }
-
-    .title {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        color: #ffffff;
-        font-weight: 700;
-    }
-
-    .venue-divider {
-        width: 60px;
-        height: 3px;
-        background-color: #0074a9;
-        border: none;
-        margin: 1.5rem 0;
-    }
-
-    .venue-subtitle {
-        font-size: 1.8rem;
-        margin: 1.5rem 0;
-        color: #ffffff;
-        font-weight: 600;
-    }
-
-    .venue-text {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        color: #ffffff;
-        margin-bottom: 2rem;
-    }
-
-    .venue-text i {
-        color: #0074a9;
-        margin-right: 0.5rem;
-    }
-
-    .venue-link {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        background-color: #0074a9;
-        color: white !important;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .venue-link:hover {
-        background-color: #005580;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes slideIn {
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    /* For mobile devices */
-    @media (max-width: 768px) {
-        .venue {
-            padding: 3rem 0;
-        }
-
-        .row {
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .left-content {
-            text-align: center;
-        }
-
-        .venue-text-container {
-            padding: 1rem;
-        }
-
-        .venue-divider {
-            margin: 1.5rem auto;
-        }
-
-        .map-container {
-            max-width: 100%;
-            aspect-ratio: 16/9;
-        }
-
-        .title {
-            font-size: 2rem;
-        }
-
-        .venue-subtitle {
-            font-size: 1.5rem;
-        }
-    }
-
-    /* For smaller screens */
-    @media (max-width: 480px) {
-        .venue {
-            padding: 2rem 0;
-        }
-
-        .map-container {
-            aspect-ratio: 4/3;
-        }
-    }
-</style>
-
-<!-- Add Font Awesome for icons -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-/>
