@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <title></title>
+  <meta content="width=device-width" name="viewport" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="A full-day Erlang and Elixir conference in London - 31 January 2025." />
+  <link
+    rel="canonical"
+    href="http://0.0.0.0:4000/"
+  />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W5JWPV6M');</script>
+  <!-- End Google Tag Manager -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data.min.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Code BEAM Lite London 2025</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="Code BEAM Lite London 2025" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="THE ERLANG AND ELIXIR CONFERENCE London | 31 January 2025" />
+<meta property="og:description" content="THE ERLANG AND ELIXIR CONFERENCE London | 31 January 2025" />
+<link rel="canonical" href="http://0.0.0.0:4000/" />
+<meta property="og:url" content="http://0.0.0.0:4000/" />
+<meta property="og:image" content="http://0.0.0.0:4000/assets/images/London2025-banner.png" />
+<script type="application/ld+json">
+{"url":"http://0.0.0.0:4000/","@type":"WebSite","image":"http://0.0.0.0:4000/assets/images/London2025-banner.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/CBL_London_Logo.png"}},"headline":"Code BEAM Lite London 2025","description":"THE ERLANG AND ELIXIR CONFERENCE London | 31 January 2025","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!--Remove image dragging -->
+  <body ondragstart="return false;" ondrop="return false;">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/assets/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/brands.min.css">
+      <link rel="stylesheet" href="/assets/font-awesome/css/solid.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400i,700i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- WEBSITE ICON IN BROWSER -->
+    <!-- <link href="/css/2016_style/img/icon.png" rel="icon" type="image/png"> -->
+  </body>
+  <script>
+    (function () {
+      window.ldfdr = window.ldfdr || {};
+      (function (d, s, ss, fs) {
+        fs = d.getElementsByTagName(s)[0];
+        function ce(src) {
+          var cs = d.createElement(s);
+          cs.src = src;
+          setTimeout(function () {
+            fs.parentNode.insertBefore(cs, fs);
+          }, 1);
+        }
+        ce(ss);
+      })(
+        document,
+        "script",
+        "https://sc.lfeeder.com/lftracker_v1_bElvO73DxJE4ZMqj.js"
+      );
+    })();
+  </script>
+  <!-- Hotjar Tracking Code for www.elixirconf.eu -->
+  <!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1678389,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5JWPV6M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar-fixed-top nav-menu" id="navMenu">
+  <a class="logo" href="#cover"></a>
+  <div class="toggle-menu">
+    <!-- Burger -->
+    <div class="navTrigger">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+  <ul class="nav navigation-bar">
+    
+    
+    <li>
+      <a class="page-scroll" href="#schedule">Schedule</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#training">Tutorial</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#speakers">Speakers</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#members">Programme Committee</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#venue">Venue</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#sponsors">Sponsors</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="page-scroll" href="#contact">Contact</a>
+    </li>
+    
+    
+    <li>
+          <!-- <div class="dropdown">
+        <a class="dropbtn">Archives
+          <i class="fa fa-caret-down"></i>
+        </a>
+     <div class="dropdown-content">
+          
+
+        </div>
+      </div> -->
+    </li>
+  </ul>
+</nav> <div class="cover" id="cover" style="background-image: url('/assets/images/BG-web green.jpg');">
+  <div class="logo">
+   <img
+      src="/assets/images/CBL_London_Logo.png"
+      alt="Code BEAM Lite"
+      width="90%"
+    />
+  </div>
+  <div class="col-right">
+    <h4 class="date" style="color: #4DBA12">
+      THE ERLANG AND ELIXIR CONFERENCE
+       <!-- In-person Event<br /> -->
+      <span style="color: #fff; font-size: 22px"><br>London | 31 January 2025 <br></span>
+
+      <span style="color: #fff; font-size: 18px"><br >
+        One day celebration of all things BEAM is coming to London!
+        <br > <br />
+        This event offers a unique opportunity to meet locally,  learn from industry experts, and network with fellow Erlang, Elixir and Gleam enthusiasts.<br />
+ </span>
+    </h4>
+    <p>
+    <span style="color: #4DBA12;">
+
+
+    </p>
+
+        <!-- highlights -->
+        <!-- Conference and Tutorial Highlights:
+        <br />
+        <a href="/talks/refactoring-via-the-language-server-protocol/">-> Refactoring via the Language Server Protocol</a><br>
+        <a href="/talks/an-elixir-application-to-a-small-hydropower-plant-with-nerves-machines/">-> An Elixir application to a small hydropower plant with Nerves machines</a><br>
+        <a href="/talks/elixir-update/">-> Elixir Update with Andrea Leopardi</a><br>
+        <a href="/talks/deep-dive-in-nx-backends/">-> Deep dive in Nx Backends</a><br>
+        <a href="/trainings/Architecting-reactive-systems/">-> Architecting Reactive Systems with Francesco Cesarini</a>
+        </p> -->
+
+
+        <!-- counter -->
+     <!-- <h4 class="call-for-talks" style="color: #fff; font-size: 22px">
+       <span style="color: #e32dfd;">
+         2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         30+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         300+</span>
+       <br>
+       DAYS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       TRACKS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       SPEAKERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       ATTENDEES
+     </h4>
+     <br> -->
+
+     <!-- call for participation  -->
+
+ <!-- <h4 class="date" style="text-align:left; font-size: 22px">The Early Bird sale opens soon, watch this space!</h4> -->
+  <!--  <a class="page-scroll btn-outline mb-3 btn-purple" href="#register">REGISTER</a>
+<a class="page-scroll btn-arrow" href="#welcome">
+      <span class="fa fa-chevron-down"></span>
+    </a>-->
+  </div>
+ <!--  <div class="cover-bottom">
+    <h4 class="call-for-talks" style="color: #fff; font-size: 22px">
+      <span style="color: #e32dfd;">CALL FOR TALKS</span>
+      <br>
+      IS OPEN AND CLOSES ON 17 JULY 2022
+    </h4>
+  </div>-->
+</div>
+
+<!-- end of cover -->
+<!-- start of coundown block -->
+
+<!-- end of coundown -->
+<div class="section welcome" id="welcome">
+     <h2 class="title">About the conference</h2>
+     <hr/>
+
+     <div class="row align-center">
+         <div class="left-content flex-end">
+             <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="400" src="https://www.youtube.com/embed/JVl2x5K1iXY" width="100%"></iframe>
+         </div>
+         <div class="right-content">
+             <div>
+                 <h3 class="text-title mb-1">This is a London event for Erlang, Elixir, Gleam and BEAM users</h3>
+                 <p>Our goal is simple: to create a vibrant platform where users of Elixir, Erlang, Gleam and other technologies 
+based on BEAM VM can come together to share insights, get feedback on projects, and inspire each other to 
+new heights.</p>
+                 <br>
+                 <p>Code BEAM has united Erlang & Elixir developers for years to grow and progress the community in the spirit of 
+Share. Learn. Inspire. Meet people and companies using and developing high performance, fault-tolerant and 
+resilient applications that scale to billions of users in production in areas like Fintech, eCommerce, IoT, 
+Gaming, Blockchain, Security, Machine Learning and more.</p>
+             </div>
+         </div>
+     </div>
+</div>
+<!-- end of welcome -->
+
+<!-- end of cft  -->
+
+<!-- end of banner-2 -->
+
+<!-- end of travelling -->
+
+<!-- end of keynotes -->
+
+<!-- end of register -->
+<div class="section speakers" id="speakers">
+    <h2 class="title">SPEAKERS</h2>
+    <hr/>
+    <div class="items-container">
+
+        
+        
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/louis-pilfold/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/louis-pilfold.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Louis Pilfold
+                        </h4>
+                    </a>
+                    <p class="item-position">Creator of Gleam</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                      
+<a href="/talks/gleams-first-year/">
+    <p class="item-training">Keynote: Gleam's First Year</p>
+</a>
+                                                                                            
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/sam-aaron/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/1200px-sam_aaron_at_yow-_night_2018_perth-_december_2018_05.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Sam Aaron
+                        </h4>
+                    </a>
+                    <p class="item-position">Sonic Pi Creator</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                        
+<a href="/talks/introducing-tau5/">
+    <p class="item-training">Keynote: Introducing Tau5 - A New BEAM-Powered Live Coding Platform</p>
+</a>
+                                                                          
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/Peter-Saxton/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/peter-saxton.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Peter Saxton
+                        </h4>
+                    </a>
+                    <p class="item-position">CTO @ EYG labs</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                
+<a href="/talks/eat-your-greens/">
+    <p class="item-training">Eat your Greens. A Philosophy for Language Design</p>
+</a>
+                                                                                                                  
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/natalia-chechina/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/natalia-chechina.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Natalia Chechina
+                        </h4>
+                    </a>
+                    <p class="item-position">One of the Core Authors of SD Erlang, Senior Developer @ Erlang Solutions</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                  
+<a href="/talks/lets-talk-about-tests/">
+    <p class="item-training">Let’s Talk About Tests</p>
+</a>
+                                                                
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/katleho-kanyane/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/katleho-kanyane.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Katleho Kanyane
+                        </h4>
+                    </a>
+                    <p class="item-position">Dev and Part-time RabbitMQ Wrangler @ Fintech</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                                                                  
+<a href="/talks/the-erlang-amqp-client-in-action/">
+    <p class="item-training">Erlang and RabbitMQ: The Erlang amqp_client in Action</p>
+</a>
+                
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/christopher-grainger/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/christopher-grainger.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Christopher Grainger
+                        </h4>
+                    </a>
+                    <p class="item-position">Founder at Amplified</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                                                                                
+<a href="/talks/why-livebook-is-my-dream-data-science-workbench/">
+    <p class="item-training">Why Livebook is My Dream Data Science Workbench</p>
+</a>
+  
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/michal-muskala/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/Michal_Muskala.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Michał Muskała
+                        </h4>
+                    </a>
+                    <p class="item-position">Software Engineer at WhatsApp</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                                                                              
+<a href="/talks/using-json-in-elixir/">
+    <p class="item-training">Trade-offs using JSON in Elixir 1.18: Wrappers vs Erlang Libs</p>
+</a>
+    
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/matteo-gheri/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/matteo-gheri.jpeg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Matteo Gheri
+                        </h4>
+                    </a>
+                    <p class="item-position">Dev @ Pocketworks</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                              
+<a href="/talks/deploying-elixir-on-azure-with-some-bonus-side-quests/">
+    <p class="item-training">Deploying Elixir On Azure With Some Bonus Side Quests</p>
+</a>
+                                                                                                                                    
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/brujo-benavides/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/brujo-benavides.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Brujo Benavides
+                        </h4>
+                    </a>
+                    <p class="item-position">🧙‍♂️ Can magically turn 🧉 into 🥘 … 😱</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                                                              
+<a href="/talks/the-art-of-writing-beautiful-code/">
+    <p class="item-training">The Art of Writing Beautiful Code</p>
+</a>
+                    
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/paul-guyot/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/paul-guyot.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Paul Guyot
+                        </h4>
+                    </a>
+                    <p class="item-position">CPTO at Smart Impulse and Open Source Hobbyist</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                  
+<a href="/talks/distributed-atomvm/">
+    <p class="item-training">Distributed AtomVM: Let's Create Clusters of Microcontrollers</p>
+</a>
+                                                                                                                                
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/guillaume-duboc/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/guillaume-duboc.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Guillaume	Duboc
+                        </h4>
+                    </a>
+                    <p class="item-position">Typing Systems @ Elixir</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+                                                                                                                                                                                                                                        
+<a href="/talks/typing-elixir-the-road-so-far/">
+    <p class="item-training">Typing Elixir: The Road So Far</p>
+</a>
+          
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+    </div>
+</div>
+
+<!-- end of speakers -->
+
+<!-- end of recordings -->
+
+<!-- end of video -->
+<div class="section schedule" id="schedule">
+    <h2 class="title">SCHEDULE</h2>
+     <hr style="border: 1px solid #fff; width: 80%; margin: 0 auto;"/>
+    <br><br><br><br>
+    <div style="width: 80%; margin: 0 auto;">
+        <table style="width: 100%; border-collapse: collapse; background-color: #000; color: #fff;">
+            <thead>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Time</th>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Talk/Activity</th>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">8:30 AM - 9:00 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Registration</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">9:00 AM - 9:10 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Welcome to the Conference!</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">9:15 AM - 09:55 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/gleams-first-year" style="color: #4EB813; text-decoration: none;">Keynote: Gleam's first year</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/louis-pilfold" style="color: #0074A9; text-decoration: none;">Louis Pilfold</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">10:00 AM - 10:30 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/the-art-of-writing-beautiful-code" style="color: #4EB813; text-decoration: none;">The Art of Writing Beautiful Code</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/brujo-benavides" style="color: #0074A9; text-decoration: none;">Brujo Benavides</a></td>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">10:30 AM - 10:55 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Coffee Break</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">10:55 AM - 11:25 AM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/why-livebook-is-my-dream-data-science-workbench" style="color: #4EB813; text-decoration: none;">Why Livebook is my dream data science workbench</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/christopher-grainger" style="color: #0074A9; text-decoration: none;">Chris Grainger</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">11:30 AM - 12:00 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/deploying-elixir-on-azure-with-some-bonus-side-quests" style="color: #4EB813; text-decoration: none;">Deploying Elixir On Azure With Some Bonus Side Quests</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/matteo-gheri" style="color: #0074A9; text-decoration: none;">Matteo Gheri</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">12:05 PM - 12:35 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/lets-talk-about-tests" style="color: #4EB813; text-decoration: none;">Let's talk about tests</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/natalia-chechina" style="color: #0074A9; text-decoration: none;">Natalia Chechina</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">12:35 PM - 1:35 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Lunch</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+            <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">1:35 PM - 2:05 PM</td>
+                      <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/eat-your-greens" style="color: #4EB813; text-decoration: none;">Eat your Greens. A Philosophy for Language Design</a></td>
+                        <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/Peter-Saxton" style="color: #0074A9; text-decoration: none;">Peter Saxton</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">2:10 PM - 2:40 PM</td>
+                      <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/using-json-in-elixir" style="color: #4EB813; text-decoration: none;">Trade-offs using JSON in Elixir 1.18: Wrappers vs Erlang Libs</a></td>
+                        <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/michal-muskala" style="color: #0074A9; text-decoration: none;">Michał Muskała</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">2:45 PM - 3:15 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/distributed-atomvm" style="color: #4EB813; text-decoration: none;">Distributed AtomVM: let's create clusters of microcontrollers</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/paul-guyot" style="color: #0074A9; text-decoration: none;">Paul Guyot</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">3:15 PM - 3:40 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Coffee Break</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">3:40 PM - 4:10 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/the-erlang-amqp-client-in-action/" style="color: #4EB813; text-decoration: none;">Erlang and RabbitMQ: The Erlang amqp_client in Action</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/katleho-kanyane" style="color: #0074A9; text-decoration: none;">Katleho Kanyane</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">4:15 PM - 4:55 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/talks/introducing-tau5" style="color: #4EB813; text-decoration: none;">Keynote: Introducing Tau5 - a new BEAM-powered live coding platform</a></td>
+                    <td style="border: 1px solid #fff; padding: 10px;"><a href="https://codebeamlondon.com/participants/sam-aaron" style="color: #0074A9; text-decoration: none;">Sam Aaron</a></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">5:00 PM - 5:10 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Closing Notes</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">5:10 PM - 6:00 PM</td>
+                    <td style="border: 1px solid #fff; padding: 10px; color: #D3D3D3; font-family: 'Helvetica Neue', sans-serif;">Drinks & Networking</td>
+                    <td style="border: 1px solid #fff; padding: 10px;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </hr>
+</div>
+
+<!-- end of schedule -->
+
+<!-- end of hybrid -->
+
+<!-- end of lightningtalks -->
+<div class="section trainers" id="trainers">
+    <h2 class="title">TRAINERS</h2>
+    <hr/>
+    <div class="items-container">
+
+
+        
+        
+
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/francesco-cesarini/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/francesco-cesarini.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Francesco Cesarini
+                        </h4>
+                    </a>
+                    <p class="item-position">Founder and Technical Director of Erlang Solutions</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+          
+<a href="/trainings/architecting-systems-for-scalability-and-reliability/">
+    <p class="item-training">
+         
+         Architecting   
+         Systems   
+         For   
+         Scalability   
+         And   
+         Reliability   
+    </p>
+</a>
+                    
+
+                </div>
+            
+        
+    </div>
+</div>
+<!-- end of trainers -->
+<div class="section training" id="training">
+    <h2 class="title">TUTORIAL</h2>
+    <hr />
+    <div class="table-container">
+          
+        <div class="table-item">
+            <div class="item-col item-hours" onload="this.innerText = 'foo'">
+                   30/01/2025 09:00AM-05:00PM GMT 
+            </div>
+
+            <div class="item-col item-training">
+                <a href="/trainings/architecting-systems-for-scalability-and-reliability/">
+                    <p class="item-title">
+                           Architecting     Systems     For     Scalability     And     Reliability   
+                    </p>
+                </a>
+                 
+                <a href="/participants/francesco-cesarini/">
+                    <p class="item-trainer">Trainer: Francesco Cesarini</p>
+                </a>
+                
+            </div>
+        </div>
+         
+    </div>
+</div>
+
+<!-- end of training -->
+<div class="section speakers" id="members">
+    <h2 class="title">PROGRAMME COMMITTEE</h2>
+    <hr/>
+    <div class="items-container">
+
+        
+        
+
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/tee-teoh/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/tee-teoh.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Tee Teoh
+                        </h4>
+                    </a>
+                    <p class="item-position">Consultant at Erlang Solutions</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/evadne-wu/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/evadne-wu.png');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Evadne Wu
+                        </h4>
+                    </a>
+                    <p class="item-position"></p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/alanna-mcentegart/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/alanna-mcentegart.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Alanna McEntegart
+                        </h4>
+                    </a>
+                    <p class="item-position">Computer Scientist turned Business Analyst</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/claudio-ortolina/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/claudio-ortolina.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Claudio Ortolina
+                        </h4>
+                    </a>
+                    <p class="item-position">Software Engineer and Speaker</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+            
+            
+            
+                <div class="item">
+                    <a href="/participants/francesco-cesarini/" class="item-head-link">
+                        <div class="img" style="background-image: url('/assets/images/francesco-cesarini.jpg');">
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <h4 class="item-name">
+                            Francesco Cesarini
+                        </h4>
+                    </a>
+                    <p class="item-position">Founder and Technical Director of Erlang Solutions</p>
+                     
+
+<!-- keynote -->
+
+
+<!-- speaker -->
+
+
+<!-- trainer -->
+
+
+                </div>
+            
+        
+    </div>
+</div>
+
+<!-- end of members  -->
+<div class="venue-wrapper">
+    <!-- Original Venue Section -->
+    <div class="venue-container">
+        <div class="section venue" id="venue">
+            <div class="row">
+                <div class="left-content">
+                    <div class="venue-text-container">
+                        <h2 class="title">CONFERENCE VENUE</h2>
+                        <hr class="venue-divider" />
+                        <p class="venue-subtitle">CodeNode</p>
+                        <p class="venue-text">
+                            <i class="fas fa-map-marker-alt"></i> 10 South
+                            Place,<br />
+                            EC2M 7EB, <br />
+                            London
+                        </p>
+                        <a
+                            href="https://codenode.live/about-us/"
+                            class="venue-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            VENUE DETAILS
+                        </a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="map-container"><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf-F7nBzxi_73uI9QUxRQ-cNihYtlZ_AA"></script>
+<div>
+    <div id="gmap_canvas"></div>
+</div>
+<script type="text/javascript">
+    function init_map() {
+        var myOptions = {
+            zoom: 14,
+            scrollwheel: false,
+            center: new google.maps.LatLng(51.51880074629277, -0.08573684672307866),
+            mapTypeId: google
+                .maps
+                .MapTypeId
+                .ROADMAP,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                }, {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#c9c9c9"
+                        }
+                    ]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }
+            ]
+        };
+        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(51.51880074629277, -0.08573684672307866)
+        });
+        infowindow = new google.maps.InfoWindow({content: "<span><strong>CodeNode</strong><br>10 South Pl, London EC2M 7EB, United Kingdom<br><span>"});
+        google
+            .maps
+            .event
+            .addListener(marker, "click", function () {
+                infowindow.open(map, marker);
+            });
+        infowindow.open(map, marker);
+    }
+    google
+        .maps
+        .event
+        .addDomListener(window, "load", init_map);
+</script>
+</div>
+                </div>
+            </div>
+
+            <!-- Tutorial Venue Section (now inside the same container) -->
+            <div class="row tutorial-venue" style="margin-top: 3rem">
+                <div class="left-content">
+                    <div class="venue-text-container">
+                        <h2 class="title">TUTORIAL VENUE</h2>
+                        <hr class="venue-divider" />
+                        <p class="venue-subtitle">The Loom</p>
+                        <p class="venue-text">
+                            <i class="fas fa-map-marker-alt"></i> 14 Gower's Walk,<br />
+                            E1 8PY, <br />
+                            London
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end of venue -->
+<div class="banner-1" id="banner-1">
+    <h3 class="text">
+        Would you like to participate as a sponsor of this event? We need support from the community to make Code BEAM Lite London the best event it can possibly be. In return, we offer sponsors the opportunity to showcase technology and hire new talent. Explore our sponsorship possibilities!
+    </h3>
+    <a class="page-scroll btn-outline btn-purple ml-1" href="mailto:info@codesync.global?Subject=Sponsoring%20Code%20BEAM%20Lite%20London">Sponsorship</a>
+</div>
+
+<!-- end of banner-1  -->
+
+<!-- end of banner-3 -->
+
+<!-- end of diversity -->
+
+<!-- end of volunteer -->
+
+<!-- end of hotels -->
+
+<!-- end of covid-19 -->
+
+<!-- end of shop -->
+
+<!-- end of blog -->
+
+<!-- end of banner-5 -->
+<div class="section sponsor" id="sponsors">
+    <h2 class="title">SPONSORS</h2>
+    <hr/>
+
+  <!-- <p class="section-text">
+        Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac
+                                                                                            ante ipsum primis
+    </p> -->
+
+<div class="row sponsors">
+    <h2 class="sponsor-title">Diversity & Inclusion Sponsor</h2>
+          <a href="https://www.erlang-solutions.com" target="_blank">
+               <img src="/assets/images/erlang-solutions-logo_erlang-solutions-logo-black.png" alt="Erlang Solutions"/>
+          </a>
+       <!--     <h2 class="sponsor-title">Platinum Sponsors</h2>
+            <a href="https://www.emqx.com/en" target="_blank">
+                 <img src="/assets/images/sponsors/EMQ-Logo.png" alt="EMQ" />
+            </a>
+            <a href="https://jobs.lever.co/teller" target="_blank">
+                 <img src="/assets/images/sponsors/Teller-logo.png" alt="Teller" />
+            </a>
+        <h2 class="sponsor-title">Platinum Sponsors</h2>
+                  <a href="https://www.kivra.se" target="_blank">
+                       <img src="/assets/images/Kivra_Logo.png" alt="Kivra" style="height: 5em;">
+                  </a>
+                &nbsp
+                            <a href="https://www.aeternity.com/" target="_blank">
+                                <img src="/assets/images/Aeternity2.png" alt="aeternity" style="height: 5em;">
+                            </a>
+<br/><br/><br /><br  />=
+        <h2 class="sponsor-title">Platinum Sponsor</h2>
+
+            <a href="https://www.erlang-solutions.com/" target="_blank">
+                <img src="/assets/images/erlang-solutions-logo_erlang-solutions-logo-black.png" alt="erlang solutions">
+            </a>
+            &nbsp
+
+         <h2 class="sponsor-title">Silver Sponsor</h2>
+
+
+                <a href="https://www.wyeworks.com/" target="_blank">
+                    <img src="/assets/images/Wyeworks-Logo-Black-Red.png" alt="WyeWorks" />
+                </a>
+
+                 <a href="https://www.mimiquate.com/" target="_blank">
+                    <img src="/assets/images/Mimiquate.png" alt="Mimiquate" />
+                </a>
+
+  <h2 class="sponsor-title">Gold Sponsor</h2>
+
+
+                <a href="https://stritzinger.com" target="_blank">
+                    <img src="/assets/images/grisp-io_.png" alt="Peer Stritzinger"  style="height: 9em;"/>
+                </a> -->
+
+
+
+        <!-- Sponsors Carousel -->
+                    <!-- <div id="testimonials-carousel" class="sponsor-testimonial">
+      
+      <h3 class="name">Johnatan Doe</h3>
+
+      
+      <h3 class="name">Adam Smith</h3>
+
+      
+      <h3 class="name">Irene Warner</h3>
+
+      
+      <h3 class="name">Richard Ryan</h3>
+
+      
+    </div> -->
+    </div>
+</div>
+
+<!-- end of sponsors -->
+<!-- start of  testimonials  block -->
+
+<!-- end of  testimonials  block -->
+
+
+  <div class="gallery-wrapper section">
+  
+  <h3 class="title"></h3>
+  <hr />
+  
+  <div class="gallery-grid my-3">
+     
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-1.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-1.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-2.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-2.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-3.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-3.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-4.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-4.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-5.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-5.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-6.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-6.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-7.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-7.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+    <a data-fslightbox="gallery" class="gallery-item" href="https://codebeameurope.com/assets/images/CBE-23-pic-8.png">
+      <img src="https://codebeameurope.com/assets/images/CBE-23-pic-8.png" alt="Code BEAM Europe 2024">
+    </a>
+    
+  </div>
+</div>
+
+<!-- end of gallery-grid  -->
+
+<!-- end of newsletter -->
+<div class="section contact" id="contact">
+    <h2 class="title">CONTACT US</h2>
+    <hr/>
+    <p class="section-text mb-3">
+    Questions? Leave Us A Message.
+    </p>
+
+    <a class="page-scroll btn-outline btn-purple ml-1" href="mailto:info@codesync.global?Subject=Code BEAM Lite London">Send Message</a>
+</div>
+
+<!-- end of contact -->
+
+
+<!-- modal block -->
+
+ <div class="footer" id="footer">
+    <div class="social-icons">
+        <a href="https://www.youtube.com/c/CodeSync" target="_blank">
+            <svg
+                aria-hidden="true"
+                data-prefix="fab"
+                data-icon="youtube"
+                class="svg-inline--fa fa-youtube fa-w-18"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                height="24"
+                width="24"
+            >
+                <path
+                    fill="#4DBA12"
+                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                ></path>
+            </svg>
+        </a>
+        <a href="https://twitter.com/codebeamio?lang=en" target="_blank">
+            <svg
+                aria-hidden="true"
+                data-prefix="fab"
+                data-icon="twitter"
+                class="svg-inline--fa fa-twitter fa-w-16"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                height="24"
+                width="24"
+            >
+                <path
+                    fill="#4DBA12"
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                ></path>
+            </svg>
+        </a>
+        <a href="https://bsky.app/profile/codebeam.bsky.social" target="_blank">
+            <svg
+                aria-hidden="true"
+                data-prefix="fab"
+                data-icon="bluesky"
+                class="svg-inline--fa fa-bluesky fa-w-16"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 57"
+                height="24"
+                width="24"
+            >
+                <path
+                    fill="#4DBA12"
+                    d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+                />
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/code-sync/" target="_blank">
+            <svg
+                aria-hidden="true"
+                data-prefix="fab"
+                data-icon="linkedin-in"
+                class="svg-inline--fa fa-linkedin-in fa-w-14"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                height="24"
+                width="24"
+            >
+                <path
+                    fill="#4DBA12"
+                    d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"
+                ></path>
+            </svg>
+        </a>
+    </div>
+    <hr />
+    <p>All Rights Reserved</p>
+    <p>
+        <strong>Code Sync</strong>
+        © 2024 Copyright
+    </p>
+    <p>
+        <strong>Organised by</strong>
+        <a href="https://codesync.global">Code Sync</a> powered by
+        <a
+            href="https://www.erlang-solutions.com/?utm_source=elixirconf&utm_medium=referral"
+            >Erlang Solutions</a
+        >
+    </p>
+
+    <p>
+        <br />
+
+        <a href="https://codesync.global/terms_and_conditions/">
+            Terms of Use</a
+        >
+        |
+        <a href="https://codesync.global/about-us/#Conduct"> Code of Conduct</a>
+        |
+        <a href="https://codesync.global/privacy_policy/"> Privacy Policy</a>
+        |
+        <a href="https://codesync.global/page/18/"> Anti-Slavery Policy</a>
+    </p>
+</div>
+
+    <!-- jQuery Version 1.11.0 -->
+<script src="/assets/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/jquery.easing.min.js"></script>
+<script src="/assets/js/classie.js"></script>
+<script src="/assets/js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/assets/js/agency.js"></script>
+
+<!-- Owl Carousel -->
+<script src="/assets/js/owl.carousel.min.js" charset="utf-8"></script>
+
+
+<!-- Parallaxing & SmoothScroll -->
+<script src="/assets/js/scrollax.min.js" charset="utf-8"></script>
+
+
+
+<script src="/assets/js/fslightbox.js" charset="utf-8"></script>
+
+<!-- Main JS -->
+<script src="/assets/js/main.js" charset="utf-8"></script>
+<script type="text/javascript">
+piAId = '24452';
+piCId = '63005';
+piHostname = 'pi.pardot.com';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+  </body>
+</html>
