@@ -1,6 +1,6 @@
 title:
 description: # this means to ignore newlines until "baseurl:"
-  A full-day Erlang and Elixir conference in London - 31 January 2025.
+  A full-day Erlang and Elixir conference in London - 6 March 2026.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://codebeamlondon.com" # the base hostname & protocol for your site
 
