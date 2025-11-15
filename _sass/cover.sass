@@ -2,50 +2,60 @@
     align-items: space-between
     background-size: cover
     background-repeat: no-repeat
-    background-color: #000101
-    color: #fff
+    background-color: $bg-dark
+    color: $white
     display: flex
     height: auto
     flex-wrap: wrap
-    padding: 8em 0 0 0
+    padding: 8em $spacing-2xl 0 $spacing-2xl
     justify-content: center
     width: 100%
     @media only screen and (max-width: 1112px)
         height: auto
         text-align: center
+        padding: 6em $spacing-lg 0 $spacing-lg
+    @media only screen and (max-width: 634px)
+        padding: 5em $spacing-md 0 $spacing-md
     .logo
-        min-height: 500px
+        min-height: 350px
         max-width: 500px
         width: 60%
+        display: flex
+        align-items: center
+        justify-content: center
         img
             display: block
-        @media only screen and (max-width: 1112px)
-            width: 90%
-        img
             height: auto
             width: 100%
+            max-height: 450px
+            object-fit: contain
+        @media only screen and (max-width: 1112px)
+            width: 90%
+            min-height: 280px
         @media only screen and (max-width: 634px)
-            min-height: 320px
-            img
-                display: block
+            min-height: 220px
+            width: 100%
     .col-right
         align-items: flex-start
         display: flex
         flex-flow: column
         justify-content: flex-start
         max-width: 782px
-        padding: 3em 0 0 3em
+        padding: $spacing-2xl 0 0 $spacing-2xl
+        @media only screen and (max-width: 1112px)
+            padding: $spacing-xl $spacing-md 0 $spacing-md
+            align-items: center
         @media only screen and (max-width: 634px)
-            padding: 2em 2em 0 2em
+            padding: $spacing-lg $spacing-sm 0 $spacing-sm
         .date
-            color: #4DBA12
+            color: $brand-green
             font-size: 1.8em
             font-weight: 300
             letter-spacing: .1em
             margin: 0 0 1.5em 0
             text-align: left
         p
-            color: #fff
+            color: $white
             font-size: 1.2em
             font-weight: 300
             line-height: 1.5em
@@ -67,7 +77,7 @@
         border-width: 1px
         width: 2em
     .btn-arrow
-        border: solid .09em #ee5a30
+        border: solid .09em $brand-orange
         border-radius: 60%
         font-size: 1.6em
         padding: .8em

@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6
   margin: 0
 
 p
-  font-family: "Montserrat", sans-serif
+  font-family: 'Montserrat', sans-serif
   font-size: 100%
   font-weight: normal
   line-height: 1.5em
@@ -36,7 +36,7 @@ p
   color: #fff
 
 li
-  font-family: "Montserrat", sans-serif
+  font-family: 'Montserrat', sans-serif
   font-size: 100%
   font-weight: normal
   line-height: 1.5em
@@ -60,33 +60,55 @@ a
   position: fixed
   top: 0
   width: 100%
-  z-index: 9999
+  z-index: $z-index-fixed
+  transition: $transition-background
   @media only screen and (max-width: 1112px)
     justify-content: space-between
-    flex-wrap: wrap
+    flex-wrap: nowrap
     padding: 1em 0
-    overflow-y: scroll
     .nav
-      display: none !important
-      margin-top: 1em
-      width: 100%
+      position: fixed
+      top: 0
+      right: -100%
+      height: 100vh
+      width: 80%
+      max-width: 320px
+      background-color: $bg-darkest
+      display: flex !important
+      flex-direction: column
+      padding: 5em 0 2em 0
+      box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5)
+      overflow-y: auto
+      transition: right $transition-speed-normal $transition-easing
       li
-        height: 3.5em
+        height: auto
         width: 100%
         a
-          color: #ffffff
+          color: $white
           align-items: center
-          background-color: #000000
-          border-bottom: solid .01em #efefef
+          background-color: transparent
+          border-bottom: solid .01em $gray-200
           display: flex
           flex-grow: 1
           height: 100%
           margin: 0
-          padding: .2em 1em 0 1em
+          padding: 1em 1.5em
           width: 100%
+          transition: $transition-background
+          &:hover
+            background-color: rgba(255, 255, 255, 0.1)
     .active
-      display: flex !important
-      flex-wrap: wrap
+      right: 0 !important
+    // Mobile menu backdrop
+    &.active::before
+      content: ''
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100vh
+      background-color: rgba(0, 0, 0, 0.7)
+      z-index: -1
 
   .logo
     background-image: url('../../assets/images/codesync-logo.svg')
@@ -175,8 +197,8 @@ a
 .btn-outline
   align-items: center
   background: none
-  border: solid .1em #fff
-  color: #ffffff
+  border: solid .1em $white
+  color: $white
   border-radius: .3em
   display: flex
   justify-content: center
@@ -184,35 +206,83 @@ a
   font-weight: 500
   letter-spacing: .16em
   padding: .5em 2.7em
+  transition: $transition-all
+  cursor: pointer
+  text-decoration: none
   @media screen and (max-width: 900px)
     text-align: center
+  // Focus state for accessibility
+  &:focus
+    outline: 2px solid $brand-cyan
+    outline-offset: 2px
+  // Active state
+  &:active
+    transform: translateY(1px)
 
 .btn-purple
   &:hover
-    background-color: #fff
-    color: #543465
+    background-color: $white
+    color: $purple-base
+    transform: translateY(-2px)
+    box-shadow: $box-shadow-md
+  &:focus
+    outline-color: $purple-light
+  &:active
+    transform: translateY(0)
 
 .btn-blue
   &:hover
-    background-color: #ffffff
-    color: #2f5677
+    background-color: $white
+    color: $gray-blue-light
+    transform: translateY(-2px)
+    box-shadow: $box-shadow-md
+  &:focus
+    outline-color: $bg-blue
+  &:active
+    transform: translateY(0)
 
-.btn-orange
-  border: solid .1em #4DBA12
-  color: #4DBA12
+.btn-green
+  border: solid .1em $brand-green
+  color: $brand-green
   &:hover
-    background-color: #4DBA12
-    color: #fff
+    background-color: $brand-green
+    color: $white
+    transform: translateY(-2px)
+    box-shadow: $box-shadow-md
+  &:focus
+    outline-color: $brand-green
+  &:active
+    transform: translateY(0)
+    box-shadow: $box-shadow-sm
+
+.btn-green-hover-white
+  &:hover
+    background-color: $white
+    color: $brand-green
+    transform: translateY(-2px)
+    box-shadow: $box-shadow-md
+  &:focus
+    outline-color: $brand-green
+  &:active
+    transform: translateY(0)
+
+// Legacy support - will be phased out
+.btn-orange
+  @extend .btn-green
 
 .btn-orange-hover-white
-  &:hover
-    background-color: #ffffff
-    color: #4DBA12
+  @extend .btn-green-hover-white
 
 .btn-grey
   &:hover
-    background-color: #ffffff
-    color: #323333
+    background-color: $white
+    color: $gray-900
+    transform: translateY(-2px)
+    box-shadow: $box-shadow-md
+  &:focus
+    outline-color: $gray-600
+  &:active
+    transform: translateY(0)
 
 .ml-1
   @media only screen and (min-width: 981px)
@@ -235,7 +305,7 @@ a
 
 .section
   align-items: center
-  background-color: #000101
+  background-color: $bg-section-primary
   display: flex
   flex-wrap: wrap
   height: auto
@@ -244,6 +314,14 @@ a
   width: 100%
   @media only screen and (max-width: 1112px)
     padding: 2em 1em
+  // Alternating section backgrounds for visual variety
+  &:nth-of-type(even)
+    background-color: $bg-section-secondary
+  // Special background classes
+  &.section--dark
+    background-color: $bg-dark
+  &.section--darker
+    background-color: $bg-darker
   .title
     color: #fff
     font-size: 2em
@@ -297,20 +375,22 @@ a
 .text-title
   color: #fff
   letter-spacing: .1em
-  font-family: 'Lato'
+  font-family: 'Montserrat', sans-serif
   font-size: 1.5em
+  @media only screen and (max-width: 1112px)
+    font-size: 1.3em
 
 .text-subtitle
   color: #fff
   letter-spacing: .1em
-  font-family: 'Lato'
+  font-family: 'Lato', sans-serif
   font-size: 1.5em
   font-weight: 100
 
 .text-content
   color: #fff
   letter-spacing: .1em
-  font-family: 'Lato'
+  font-family: 'Lato', sans-serif
   font-size: 1em
   font-weight: 100
 
@@ -403,7 +483,7 @@ a
   .title, .section-text
     color: #fff
   hr
-    background: linear-gradient(to right, #ffffff 50%, #e32dfd 50%)
+    background: linear-gradient(to right, #4DBA12 50%, #12E7FE 50%)
   iframe
     margin: 0 auto
 
